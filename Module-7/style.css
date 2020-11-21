@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+#gallery {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+div {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 750px;
+  height: auto;
+  margin-bottom: 1%;
+  border: 1px solid #bdbdbd;
+  border-radius: 10%;
+}
+
+#validation-input {
+    border: 3px solid #bdbdbd;
+  }
+  
+  #validation-input.valid {
+    border-color: #4caf50;
+  }
+  
+  #validation-input.invalid {
+    border-color: #f44336;
+  }
