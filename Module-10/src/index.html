@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Homework 10</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="toolbar">
+      <!-- Разметка переключателя темы -->
+      <div class="theme-switch">
+        <svg class="theme-switch__icon" role="img" aria-label="Иконка солнца">
+          <use href="./images/sprite.svg#sun"></use>
+        </svg>
+
+        <div class="theme-switch__control">
+          <input
+            class="theme-switch__toggle"
+            type="checkbox"
+            name="theme"
+            id="theme-switch-toggle"
+            aria-label="Переключить между тёмной и светлой темой"
+          />
+          <label
+            aria-hidden="true"
+            class="theme-switch__track"
+            for="theme-switch-toggle"
+          >
+          </label>
+          <div aria-hidden="true" class="theme-switch__marker"></div>
+        </div>
+
+        <svg class="theme-switch__icon" aria-label="Иконка луны">
+          <use href="./images/sprite.svg#moon"></use>
+        </svg>
+      </div>
+    </div>
+
+    <!-- В этот список рендери разметку меню -->
+    <ul class="menu js-menu"></ul>
+  </body>
+</html>
