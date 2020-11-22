@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.timer {
+  font-size: 100px;
+  margin-top: 50px;
+}
