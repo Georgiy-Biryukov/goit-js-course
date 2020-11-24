@@ -1,0 +1,114 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('./images/bg-pattern.png');
+}
+
+.search_input {
+  display: block;
+  text-align: left;
+  height: 40px;
+  width: 400px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 10px;
+}
+
+.search_block {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+}
+
+.hidden-js {
+  display: none;
+}
+
+.country {
+  &_items {
+    width: 400px;
+    height: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-left: 50px;
+  }
+
+  &_info {
+    display: block;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  &__name {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  &__description {
+    display: inline;
+  }
+
+  &__capital {
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  &__population {
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  &__list-language {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  &__list-language-item {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  &__flag {
+    display: block;
+    width: 300px;
+    height: auto;
+    border-style: dotted;
+    padding: 5px;
+    border-color: #000;
+
+    &-img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
